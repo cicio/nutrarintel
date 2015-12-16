@@ -50,6 +50,11 @@ group :development, :test do
   gem 'database_cleaner'
   gem 'rspec-rails', '~>3.1'
   gem 'rspec', '~> 3.1'
+  gem 'jasmine-rails'
+  gem 'autotest-rails'
+  gem 'factory_girl_rails'
+  gem 'simplecov', :require => false
+  gem 'metric_fu'
 end
 
 group :production do
