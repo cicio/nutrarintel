@@ -1,0 +1,53 @@
+-# in app/views/foods/new.html.haml
+
+%h1.w3-container New Food Item
+
+%h2.w3-container.w3-teal Input Form
+
+= form_for :food, url: foods_path do |f|
+  .w3-container
+    .w3-label= f.label :nutrient_databankID
+    = f.text_field :nutrient_databank_id
+    %p
+    .w3-label= f.label :food_group_code_id
+    = f.text_field :food_group_code_id
+    %p
+    .w3-label= f.label :long_description
+    = f.text_area :long_description
+    %p
+    .w3-label= f.label :short_description
+    = f.text_field :short_description
+    %p
+    .w3-label= f.label :common_name
+    = f.text_field :common_name
+    %p
+    .w3-label= f.label :manufacturer
+    = f.text_field :manufacturer
+    %p
+    .w3-label= f.label :survey
+    = f.text_field :survey
+    %p
+    .w3-label= f.label :refuse_description
+    = f.text_field :refuse_description
+    %p
+    .w3-label= f.label :refuse
+    = f.text_field :refuse
+    %p
+    .w3-label= f.label :scientific_name
+    = f.text_field :scientific_name
+    %p
+    .w3-label= f.label :nitrogen_factor
+    = f.text_field :nitrogen_factor
+    %p
+    .w3-label= f.label :protein_factor
+    = f.text_field :protein_factor
+    %p
+    .w3-label= f.label :fat_factor
+    = f.text_field :fat_factor
+    %p
+    .w3-label= f.label :carbohydrate_factor
+    = f.text_field :carbohydrate_factor
+    %p
+    .w3-block= f.submit
+    %p
+    .w3-btn.w3-red= link_to 'Cancel', foods_path
