@@ -7,12 +7,16 @@
   %h3 Food Group #{@food.food_group_code_id}
 
   %h3 Macronutrients
-
-  .w3-quarter Carbohydrate
-  .w3-quarter Fat
-  .w3-quarter Protein
-  .w3-quarter Nitrogen 
-
+  %p
+    .w3-quarter.w3-yellow Carbohydrate
+    .w3-quarter.w3-red Fat
+    .w3-quarter.w3-green Protein
+    .w3-quarter.w3-blue Nitrogen 
+  %p  
+    .w3-quarter= @food.carbohydrate_factor
+    .w3-quarter= @food.fat_factor
+    .w3-quarter= @food.protein_factor
+    .w3-quarter= @food.nitrogen_factor
 
 
 
