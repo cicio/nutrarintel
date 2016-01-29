@@ -24,7 +24,7 @@ ActiveRecord::Schema.define(version: 20160126002940) do
 
   create_table "foods", id: false, force: :cascade do |t|
     t.string   "nutrient_databank_number", null: false
-    t.string   "food_group_code"
+    t.string   "food_group_code",          null: false
     t.text     "long_description",         null: false
     t.string   "short_description",        null: false
     t.text     "common_name"
@@ -76,5 +76,8 @@ ActiveRecord::Schema.define(version: 20160126002940) do
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
+
+  add_index "nutrients", ["nutrient_databank_number"], name: "index_nutrients_on_nutrient_databank_number"
+  add_index "nutrients", ["nutrient_number"], name: "index_nutrients_on_nutrient_number"
 
 end

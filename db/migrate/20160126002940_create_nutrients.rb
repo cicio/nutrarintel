@@ -20,10 +20,8 @@ class CreateNutrients < ActiveRecord::Migration
     	t.string :addmod_date
     	t.string :confidence_code
     	t.timestamps null: false
-
-    	
-
-    
     end
+    add_index :nutrients, :nutrient_databank_number
+    add_index :nutrients, :nutrient_number
   end
 end
