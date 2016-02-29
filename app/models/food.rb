@@ -1,6 +1,9 @@
 class Food < ActiveRecord::Base
 <<<<<<< HEAD
+<<<<<<< HEAD
 =======
+=======
+>>>>>>> edge22
 	self.primary_key = 'nutrient_databank_number'
 	validates :food_group_code, presence: true, uniqueness: true
     validates :long_description, presence: true
@@ -14,5 +17,8 @@ class Food < ActiveRecord::Base
     has_many :nutrient_definitions, class_name: 'NutrientDefinition', 
           through: :nutrients
 
+<<<<<<< HEAD
+>>>>>>> edge22
+=======
 >>>>>>> edge22
 end

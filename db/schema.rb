@@ -12,6 +12,7 @@
 # It's strongly recommended that you check this file into your version control system.
 
 <<<<<<< HEAD
+<<<<<<< HEAD
 ActiveRecord::Schema.define(version: 20160108041043) do
 
   create_table "foods", force: :cascade do |t|
@@ -21,6 +22,8 @@ ActiveRecord::Schema.define(version: 20160108041043) do
     t.text     "short_description"
     t.string   "common_name"
 =======
+=======
+>>>>>>> edge22
 ActiveRecord::Schema.define(version: 20160126002940) do
 
   create_table "foodgroups", id: false, force: :cascade do |t|
@@ -38,6 +41,9 @@ ActiveRecord::Schema.define(version: 20160126002940) do
     t.text     "long_description",         null: false
     t.string   "short_description",        null: false
     t.text     "common_name"
+<<<<<<< HEAD
+>>>>>>> edge22
+=======
 >>>>>>> edge22
     t.string   "manufacturer"
     t.string   "survey"
@@ -49,6 +55,7 @@ ActiveRecord::Schema.define(version: 20160126002940) do
     t.decimal  "fat_factor"
     t.decimal  "carbohydrate_factor"
 <<<<<<< HEAD
+<<<<<<< HEAD
     t.datetime "created_at",           null: false
     t.datetime "updated_at",           null: false
   end
@@ -56,6 +63,8 @@ ActiveRecord::Schema.define(version: 20160126002940) do
   add_index "foods", ["food_group_code_id"], name: "index_foods_on_food_group_code_id"
   add_index "foods", ["nutrient_databank_id"], name: "index_foods_on_nutrient_databank_id"
 =======
+=======
+>>>>>>> edge22
     t.datetime "created_at",               null: false
     t.datetime "updated_at",               null: false
   end
@@ -98,6 +107,9 @@ ActiveRecord::Schema.define(version: 20160126002940) do
 
   add_index "nutrients", ["nutrient_databank_number"], name: "index_nutrients_on_nutrient_databank_number"
   add_index "nutrients", ["nutrient_number"], name: "index_nutrients_on_nutrient_number"
+<<<<<<< HEAD
+>>>>>>> edge22
+=======
 >>>>>>> edge22
 
 end
